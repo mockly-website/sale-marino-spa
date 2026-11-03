@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Prenota o regala un trattamento — Sale Marino Spa (sito dimostrativo)</title>
+  <meta name="description" content="Scegli trattamento, giorno e ora, oppure prepara un buono regalo con anteprima. Il riepilogo si apre su WhatsApp. Sito dimostrativo di Mockly.">
+  <meta name="theme-color" content="#EADFCB">
+  <link rel="icon" href="assets/img/icona.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icona-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Prenota o regala un trattamento — Sale Marino Spa">
+  <meta property="og:description" content="Sito dimostrativo di un centro estetico, realizzato da Mockly. L’attività è inventata.">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Acqua bassa sulla sabbia e la scritta Sale Marino Spa">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+
+  <header class="top" data-header>
+    <a class="brand" href="index.html" aria-label="Sale Marino Spa, home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.5c7.6 0 13 4.6 13 11.6 0 7.8-6.3 13.4-13.6 13.4C8 28.5 3 23.4 3 16.6 3 9 8.6 3.5 16 3.5Z" fill="#8C9C86"/><path d="M8.5 17.5c2.4-2 4.8-2 7.2 0s4.8 2 7.2 0" fill="none" stroke="#FAF7F1" stroke-width="1.8" stroke-linecap="round"/></svg>
+      Sale Marino Spa
+    </a>
+    <nav class="nav" aria-label="Principale">
+      <a href="trattamenti.html">Trattamenti</a>
+      <a href="prenota.html#buono">Buono regalo</a>
+      <a href="index.html#orari">Orari e dove</a>
+      <a class="btn" href="prenota.html">Prenota</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-open>
+      Menu <span class="menu-btn__lines" aria-hidden="true"><span></span><span></span></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" data-menu>
+    <div class="menu__bar">
+      <span class="brand" aria-hidden="true">Sale Marino Spa</span>
+      <button class="menu__close" type="button" data-menu-close>
+        Chiudi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="menu__body">
+      <ul class="menu__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trattamenti.html">Trattamenti</a></li>
+        <li><a href="prenota.html" aria-current="page">Prenota</a></li>
+        <li><a href="prenota.html#buono">Buono regalo</a></li>
+        <li><a href="index.html#orari" data-menu-link>Orari e dove</a></li>
+      </ul>
+      <div class="menu__foot">
+        <p>Martedì–venerdì 9:30–19:30, sabato 9–13 <span>(orari di esempio)</span></p>
+        <a class="btn" href="prenota.html">Prenota un trattamento</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="contenuto">
+    <header class="page-head page-head--short">
+      <div>
+        <p class="label enter">Prenota</p>
+        <h1 class="enter">Scegli il <em>tuo&nbsp;momento.</em></h1>
+        <p class="lead enter">Ti rispondiamo su WhatsApp per confermare. Se l’orario non c’è più, te ne proponiamo un altro vicino.</p>
+      </div>
+    </header>
+
+    <div class="tabs" role="tablist" aria-label="Cosa vuoi fare">
+      <button class="tab" type="button" role="tab" id="tab-per-te" aria-controls="per-te" aria-selected="true" data-tab="per-te">Per te</button>
+      <button class="tab" type="button" role="tab" id="tab-buono" aria-controls="buono" aria-selected="false" tabindex="-1" data-tab="buono">Da regalare</button>
+    </div>
+
+    <!-- Prenotazione -->
+    <section class="panel" id="per-te" role="tabpanel" aria-labelledby="tab-per-te">
+      <div class="panel__grid">
+        <form class="form" id="form-prenota" data-booking novalidate>
+          <div class="field">
+            <label for="b-trattamento">Trattamento</label>
+            <select class="select" id="b-trattamento" name="trattamento" required aria-describedby="b-trattamento-err">
+              <option value="">Scegli un trattamento</option>
+              <!--@OPZIONI-->
+                <optgroup label="Viso">
+                  <option value="pulizia-viso">Pulizia del viso · 60 min · 50 €</option>
+                  <option value="maschera-alghe">Maschera alle alghe · 45 min · 45 €</option>
+                  <option value="laminazione-ciglia">Laminazione ciglia · 60 min · 55 €</option>
+                  <option value="sopracciglia">Forma delle sopracciglia · 20 min · 12 €</option>
+                </optgroup>
+                <optgroup label="Corpo">
+                  <option value="massaggio-rilassante">Massaggio rilassante · 50 min · 50 €</option>
+                  <option value="pietre-calde">Massaggio con pietre calde · 75 min · 70 €</option>
+                  <option value="scrub-sale">Scrub al sale marino · 40 min · 40 €</option>
+                  <option value="linfodrenaggio">Linfodrenaggio manuale · 60 min · 55 €</option>
+                </optgroup>
+                <optgroup label="Mani e piedi">
+                  <option value="manicure-semi">Manicure con semipermanente · 50 min · 30 €</option>
+                  <option value="pedicure">Pedicure estetica · 50 min · 35 €</option>
+                  <option value="rimozione-semi">Rimozione del semipermanente · 20 min · 10 €</option>
+                </optgroup>
+                <optgroup label="Epilazione">
+                  <option value="ceretta-gambe">Ceretta gambe intere · 40 min · 30 €</option>
+                  <option value="ceretta-inguine">Ceretta inguine · 20 min · 15 €</option>
+                  <option value="ceretta-ascelle">Ceretta ascelle · 10 min · 8 €</option>
+                  <option value="baffetto">Baffetto · 5 min · 5 €</option>
+                </optgroup>
+<!--/@OPZIONI-->
+            </select>
+            <p class="error" id="b-trattamento-err" data-error-for="trattamento"></p>
+          </div>
+
+          <fieldset class="field">
+            <legend>Giorno</legend>
+            <p class="field__hint">Chiuso domenica e lunedì (orari di esempio).</p>
+            <div class="days" role="radiogroup" aria-label="Giorno" data-days></div>
+            <p class="error" data-error-for="giorno"></p>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend>Ora</legend>
+            <div class="chips" role="radiogroup" aria-label="Ora" data-slots><p class="slots-empty">Prima scegli il giorno.</p></div>
+            <p class="error" data-error-for="ora"></p>
+          </fieldset>
+
+          <div class="field">
+            <label for="b-nome">Come ti chiami</label>
+            <input class="input" id="b-nome" name="nome" type="text" autocomplete="given-name" required maxlength="40" aria-describedby="b-nome-err">
+            <p class="error" id="b-nome-err" data-error-for="nome"></p>
+          </div>
+
+          <div class="field">
+            <label for="b-nota">Qualcosa da dirci? <span class="field__hint">(facoltativo)</span></label>
+            <textarea class="textarea" id="b-nota" name="nota" maxlength="200" placeholder="Allergie, pelle sensibile, prima volta…"></textarea>
+          </div>
+
+        </form>
+
+        <aside class="panel__aside" aria-label="Riepilogo">
+          <div class="summary" data-summary>
+            <h2>Riepilogo</h2>
+            <dl>
+              <div><dt>Trattamento</dt><dd data-sum="trattamento" class="is-empty">da scegliere</dd></div>
+              <div><dt>Durata</dt><dd data-sum="durata" class="is-empty">—</dd></div>
+              <div><dt>Giorno</dt><dd data-sum="giorno" class="is-empty">da scegliere</dd></div>
+              <div><dt>Ora</dt><dd data-sum="ora" class="is-empty">da scegliere</dd></div>
+              <div><dt>Prezzo</dt><dd data-sum="prezzo" class="is-empty">—</dd></div>
+            </dl>
+            <p class="demo-note">Prezzi di esempio. Si paga in sede, dopo il trattamento.</p>
+          </div>
+            <div class="send">
+              <button class="btn" type="submit" form="form-prenota">Manda la richiesta su WhatsApp</button>
+              <p class="demo-note">È una dimostrazione: il messaggio arriva a Mockly, non a un centro estetico vero.</p>
+              <div class="done" role="status" data-done hidden>
+                <strong>Si è aperto WhatsApp.</strong>
+                <p>Il riepilogo è già scritto: basta premere invia. Non si è aperto? <a data-done-link href="https://wa.me/393517578080" target="_blank" rel="noopener">Aprilo da qui</a>.</p>
+              </div>
+            </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Buono regalo -->
+    <section class="panel" id="buono" role="tabpanel" aria-labelledby="tab-buono" hidden>
+      <div class="panel__grid">
+        <form class="form" data-gift novalidate>
+          <div class="field">
+            <label for="g-cosa">Cosa regali</label>
+            <select class="select" id="g-cosa" name="cosa" required aria-describedby="g-cosa-err">
+              <option value="">Scegli</option>
+              <optgroup label="Un importo libero">
+                <option value="importo-30">Buono da 30 €</option>
+                <option value="importo-50">Buono da 50 €</option>
+                <option value="importo-80">Buono da 80 €</option>
+              </optgroup>
+              <!--@OPZIONI2-->
+                <optgroup label="Viso">
+                  <option value="pulizia-viso">Pulizia del viso · 60 min · 50 €</option>
+                  <option value="maschera-alghe">Maschera alle alghe · 45 min · 45 €</option>
+                  <option value="laminazione-ciglia">Laminazione ciglia · 60 min · 55 €</option>
+                  <option value="sopracciglia">Forma delle sopracciglia · 20 min · 12 €</option>
+                </optgroup>
+                <optgroup label="Corpo">
+                  <option value="massaggio-rilassante">Massaggio rilassante · 50 min · 50 €</option>
+                  <option value="pietre-calde">Massaggio con pietre calde · 75 min · 70 €</option>
+                  <option value="scrub-sale">Scrub al sale marino · 40 min · 40 €</option>
+                  <option value="linfodrenaggio">Linfodrenaggio manuale · 60 min · 55 €</option>
+                </optgroup>
+                <optgroup label="Mani e piedi">
+                  <option value="manicure-semi">Manicure con semipermanente · 50 min · 30 €</option>
+                  <option value="pedicure">Pedicure estetica · 50 min · 35 €</option>
+                  <option value="rimozione-semi">Rimozione del semipermanente · 20 min · 10 €</option>
+                </optgroup>
+                <optgroup label="Epilazione">
+                  <option value="ceretta-gambe">Ceretta gambe intere · 40 min · 30 €</option>
+                  <option value="ceretta-inguine">Ceretta inguine · 20 min · 15 €</option>
+                  <option value="ceretta-ascelle">Ceretta ascelle · 10 min · 8 €</option>
+                  <option value="baffetto">Baffetto · 5 min · 5 €</option>
+                </optgroup>
+<!--/@OPZIONI2-->
+            </select>
+            <p class="error" id="g-cosa-err" data-error-for="cosa"></p>
+          </div>
+          <div class="field">
+            <label for="g-per">Per chi è</label>
+            <input class="input" id="g-per" name="per" type="text" required maxlength="30" aria-describedby="g-per-err">
+            <p class="error" id="g-per-err" data-error-for="per"></p>
+          </div>
+          <div class="field">
+            <label for="g-da">Da parte di</label>
+            <input class="input" id="g-da" name="da" type="text" autocomplete="given-name" required maxlength="30" aria-describedby="g-da-err">
+            <p class="error" id="g-da-err" data-error-for="da"></p>
+          </div>
+          <div class="field">
+            <label for="g-msg">Due righe <span class="field__hint">(facoltativo)</span></label>
+            <textarea class="textarea" id="g-msg" name="messaggio" maxlength="120" aria-describedby="g-count"></textarea>
+            <p class="counter" id="g-count" data-count>0 / 120</p>
+          </div>
+          <div class="send">
+            <button class="btn" type="submit">Manda il buono su WhatsApp</button>
+            <p class="demo-note">È una dimostrazione: nessun buono vero viene emesso e il messaggio arriva a Mockly.</p>
+            <div class="done" role="status" data-done hidden>
+              <strong>Si è aperto WhatsApp.</strong>
+              <p>Il buono è già descritto nel messaggio. Non si è aperto? <a data-done-link href="https://wa.me/393517578080" target="_blank" rel="noopener">Aprilo da qui</a>.</p>
+            </div>
+          </div>
+        </form>
+
+        <aside class="panel__aside panel__aside--first" aria-label="Anteprima del buono">
+          <div class="voucher" data-voucher>
+            <p class="voucher__top"><b>Sale Marino Spa</b><span>buono regalo · esempio</span></p>
+            <p class="voucher__what" data-v="cosa">Un’ora per te</p>
+            <p class="voucher__who" data-v="chi">per … da …</p>
+            <p class="voucher__msg" data-v="msg" hidden></p>
+          </div>
+          <p class="demo-note">L’anteprima cambia mentre scrivi. Il buono vale sei mesi (regola di esempio).</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__grid">
+      <div>
+        <p class="foot__brand">Sale Marino Spa</p>
+        <p>Via dell’Esempio 1 · orari e prezzi di esempio</p>
+      </div>
+      <ul>
+        <li><a href="trattamenti.html">Trattamenti</a></li>
+        <li><a href="prenota.html">Prenota</a></li>
+        <li><a href="prenota.html#buono">Buono regalo</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html#orari">Orari e dove</a></li>
+        <li><a href="CREDITI.md">Crediti delle foto</a></li>
+      </ul>
+    </div>
+    <div class="foot__demo">
+      <strong>Sito dimostrativo realizzato da Mockly. L’attività è inventata.</strong>
+      <span>Vuoi un sito così per il tuo lavoro? <a href="https://wa.me/393517578080?text=Ciao%20Mockly%2C%20ho%20visto%20la%20demo%20Sale%20Marino%20Spa%20e%20vorrei%20un%20sito%20cos%C3%AC%20per%20il%20mio%20lavoro." target="_blank" rel="noopener">Scrivici su WhatsApp</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/dati.js"></script>
+  <script src="assets/js/sito.js"></script>
+  <script src="assets/js/prenota.js"></script>
+</body>
+</html>

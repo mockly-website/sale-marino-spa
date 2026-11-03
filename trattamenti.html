@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Trattamenti e prezzi — Sale Marino Spa (sito dimostrativo)</title>
+  <meta name="description" content="Trattamenti viso, corpo, mani e piedi, epilazione: durata, prezzo di esempio e cosa sapere prima di venire. Sito dimostrativo di Mockly.">
+  <meta name="theme-color" content="#EADFCB">
+  <link rel="icon" href="assets/img/icona.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icona-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Trattamenti e prezzi — Sale Marino Spa">
+  <meta property="og:description" content="Sito dimostrativo di un centro estetico, realizzato da Mockly. L’attività è inventata.">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Acqua bassa sulla sabbia e la scritta Sale Marino Spa">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+
+  <header class="top" data-header>
+    <a class="brand" href="index.html" aria-label="Sale Marino Spa, home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.5c7.6 0 13 4.6 13 11.6 0 7.8-6.3 13.4-13.6 13.4C8 28.5 3 23.4 3 16.6 3 9 8.6 3.5 16 3.5Z" fill="#8C9C86"/><path d="M8.5 17.5c2.4-2 4.8-2 7.2 0s4.8 2 7.2 0" fill="none" stroke="#FAF7F1" stroke-width="1.8" stroke-linecap="round"/></svg>
+      Sale Marino Spa
+    </a>
+    <nav class="nav" aria-label="Principale">
+      <a href="trattamenti.html" aria-current="page">Trattamenti</a>
+      <a href="prenota.html#buono">Buono regalo</a>
+      <a href="index.html#orari">Orari e dove</a>
+      <a class="btn" href="prenota.html">Prenota</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-open>
+      Menu <span class="menu-btn__lines" aria-hidden="true"><span></span><span></span></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" data-menu>
+    <div class="menu__bar">
+      <span class="brand" aria-hidden="true">Sale Marino Spa</span>
+      <button class="menu__close" type="button" data-menu-close>
+        Chiudi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="menu__body">
+      <ul class="menu__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trattamenti.html" aria-current="page">Trattamenti</a></li>
+        <li><a href="prenota.html">Prenota</a></li>
+        <li><a href="prenota.html#buono">Buono regalo</a></li>
+        <li><a href="index.html#orari" data-menu-link>Orari e dove</a></li>
+      </ul>
+      <div class="menu__foot">
+        <p>Martedì–venerdì 9:30–19:30, sabato 9–13 <span>(orari di esempio)</span></p>
+        <a class="btn" href="prenota.html">Prenota un trattamento</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="contenuto">
+    <header class="page-head">
+      <div>
+        <p class="label enter">Trattamenti e prezzi</p>
+        <h1 class="enter">Con calma, <em>uno alla&nbsp;volta.</em></h1>
+        <p class="lead enter">Quindici trattamenti, ognuno con quello che serve sapere prima di venire.</p>
+      </div>
+      <figure class="page-head__stone pebble pebble--3 enter">
+        <img src="assets/img/sale-480.webp" srcset="assets/img/sale-480.webp 480w, assets/img/sale-960.webp 960w" sizes="(min-width: 960px) 20rem, 40vw" width="480" height="600" alt="Cucchiai pieni di sale grosso">
+      </figure>
+    </header>
+
+    <nav class="filter" aria-label="Filtra i trattamenti">
+      <div class="filter__row" data-filter>
+        <button class="chip" type="button" aria-pressed="true" data-show="tutti">Tutti</button>
+        <button class="chip" type="button" aria-pressed="false" data-show="viso">Viso</button>
+        <button class="chip" type="button" aria-pressed="false" data-show="corpo">Corpo</button>
+        <button class="chip" type="button" aria-pressed="false" data-show="mani">Mani e piedi</button>
+        <button class="chip" type="button" aria-pressed="false" data-show="epilazione">Epilazione</button>
+      </div>
+    </nav>
+    <p class="price-note">Prezzi e durate sono di esempio. Sul tuo sito vanno i tuoi, e li cambi quando vuoi.</p>
+    <p class="visually-hidden" aria-live="polite" data-filter-status></p>
+
+    <div class="menu-list">
+      <!--@LISTA-->
+      <section class="cat is-left" id="viso" data-cat="viso" aria-labelledby="t-viso">
+        <figure class="cat__photo pebble pebble--1" data-reveal>
+          <img src="assets/img/viso-480.webp" srcset="assets/img/viso-480.webp 480w, assets/img/viso-960.webp 960w" sizes="(min-width: 900px) 26vw, 62vw" width="480" height="600" loading="lazy" decoding="async" alt="Viso con una maschera bianca stesa con il pennello, occhi chiusi">
+        </figure>
+        <div class="cat__body">
+          <h2 class="cat__title" id="t-viso" data-reveal>Il viso, senza fretta</h2>
+          <p class="cat__intro" data-reveal>Pelle pulita, ciglia e sopracciglia in ordine. Si viene struccate.</p>
+          <ul class="tlist">
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Pulizia del viso</h3>
+                <p class="titem__meta"><span>60 min</span><span>50 €</span></p>
+              </div>
+              <p class="titem__desc">Vapore, estrazione delicata, maschera. Esci con la pelle che respira.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> Vieni struccata. Per 24 ore niente sole forte né trucco pesante.</p>
+              <a class="link-btn" href="prenota.html?t=pulizia-viso">Prenota questo<span class="visually-hidden">: Pulizia del viso</span></a>
+            </li>
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Maschera alle alghe</h3>
+                <p class="titem__meta"><span>45 min</span><span>45 €</span></p>
+              </div>
+              <p class="titem__desc">Per la pelle stanca di fine estate: idrata e rinfresca.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> Se usi creme con retinolo, diccelo prima: scegliamo una maschera più leggera.</p>
+              <a class="link-btn" href="prenota.html?t=maschera-alghe">Prenota questo<span class="visually-hidden">: Maschera alle alghe</span></a>
+            </li>
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Laminazione ciglia</h3>
+                <p class="titem__meta"><span>60 min</span><span>55 €</span></p>
+              </div>
+              <p class="titem__desc">Ciglia piegate e più scure per circa sei settimane, senza extension.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> Passa 48 ore prima per la prova di sensibilità: bastano cinque minuti.</p>
+              <a class="link-btn" href="prenota.html?t=laminazione-ciglia">Prenota questo<span class="visually-hidden">: Laminazione ciglia</span></a>
+            </li>
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Forma delle sopracciglia</h3>
+                <p class="titem__meta"><span>20 min</span><span>12 €</span></p>
+              </div>
+              <p class="titem__desc">Pinzetta e filo, disegnate sul tuo viso.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> Non toccarle nelle due settimane prima: ci serve vedere come crescono.</p>
+              <a class="link-btn" href="prenota.html?t=sopracciglia">Prenota questo<span class="visually-hidden">: Forma delle sopracciglia</span></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="cat is-right" id="corpo" data-cat="corpo" aria-labelledby="t-corpo">
+        <figure class="cat__photo pebble pebble--2" data-reveal>
+          <img src="assets/img/corpo-480.webp" srcset="assets/img/corpo-480.webp 480w, assets/img/corpo-960.webp 960w" sizes="(min-width: 900px) 26vw, 62vw" width="480" height="600" loading="lazy" decoding="async" alt="Pietre di basalto calde allineate lungo la schiena">
+        </figure>
+        <div class="cat__body">
+          <h2 class="cat__title" id="t-corpo" data-reveal>Il corpo, che si scioglie</h2>
+          <p class="cat__intro" data-reveal>Olio caldo, pietre, mani lente. Il telefono resta fuori.</p>
+          <ul class="tlist">
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Massaggio rilassante</h3>
+                <p class="titem__meta"><span>50 min</span><span>50 €</span></p>
+              </div>
+              <p class="titem__desc">Olio caldo, movimenti lenti, schiena e gambe.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> Non mangiare pesante nell’ora prima.</p>
+              <a class="link-btn" href="prenota.html?t=massaggio-rilassante">Prenota questo<span class="visually-hidden">: Massaggio rilassante</span></a>
+            </li>
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Massaggio con pietre calde</h3>
+                <p class="titem__meta"><span>75 min</span><span>70 €</span></p>
+              </div>
+              <p class="titem__desc">Le pietre di basalto sciolgono i nodi delle spalle senza premere.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> In gravidanza o con problemi di circolazione, chiedici prima.</p>
+              <a class="link-btn" href="prenota.html?t=pietre-calde">Prenota questo<span class="visually-hidden">: Massaggio con pietre calde</span></a>
+            </li>
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Scrub al sale marino</h3>
+                <p class="titem__meta"><span>40 min</span><span>40 €</span></p>
+              </div>
+              <p class="titem__desc">Sale fine e olio di mandorla: la pelle torna liscia, poi doccia calda.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> Niente ceretta né rasatura il giorno prima: il sale pizzica.</p>
+              <a class="link-btn" href="prenota.html?t=scrub-sale">Prenota questo<span class="visually-hidden">: Scrub al sale marino</span></a>
+            </li>
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Linfodrenaggio manuale</h3>
+                <p class="titem__meta"><span>60 min</span><span>55 €</span></p>
+              </div>
+              <p class="titem__desc">Per le gambe pesanti dopo una giornata in piedi.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> Bevi acqua prima e dopo. Vieni con abiti comodi.</p>
+              <a class="link-btn" href="prenota.html?t=linfodrenaggio">Prenota questo<span class="visually-hidden">: Linfodrenaggio manuale</span></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="cat is-left" id="mani" data-cat="mani" aria-labelledby="t-mani">
+        <figure class="cat__photo pebble pebble--3" data-reveal>
+          <img src="assets/img/mani-480.webp" srcset="assets/img/mani-480.webp 480w, assets/img/mani-960.webp 960w" sizes="(min-width: 900px) 26vw, 62vw" width="480" height="600" loading="lazy" decoding="async" alt="Manicure in corso: un’estetista lima le unghie di una cliente">
+        </figure>
+        <div class="cat__body">
+          <h2 class="cat__title" id="t-mani" data-reveal>Mani e piedi, curati</h2>
+          <p class="cat__intro" data-reveal>Colore che dura, talloni morbidi, unghie che non si sfogliano.</p>
+          <ul class="tlist">
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Manicure con semipermanente</h3>
+                <p class="titem__meta"><span>50 min</span><span>30 €</span></p>
+              </div>
+              <p class="titem__desc">Cuticole, forma e colore che dura tre settimane.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> Se hai già il semipermanente, la rimozione è compresa.</p>
+              <a class="link-btn" href="prenota.html?t=manicure-semi">Prenota questo<span class="visually-hidden">: Manicure con semipermanente</span></a>
+            </li>
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Pedicure estetica</h3>
+                <p class="titem__meta"><span>50 min</span><span>35 €</span></p>
+              </div>
+              <p class="titem__desc">Pediluvio caldo, talloni e unghie in ordine.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> Con calli dolorosi o unghie incarnite serve il podologo: te lo diciamo noi.</p>
+              <a class="link-btn" href="prenota.html?t=pedicure">Prenota questo<span class="visually-hidden">: Pedicure estetica</span></a>
+            </li>
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Rimozione del semipermanente</h3>
+                <p class="titem__meta"><span>20 min</span><span>10 €</span></p>
+              </div>
+              <p class="titem__desc">Senza limare l’unghia, con impacchi e calma.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> Non strapparlo da sola: l’unghia si sfoglia per settimane.</p>
+              <a class="link-btn" href="prenota.html?t=rimozione-semi">Prenota questo<span class="visually-hidden">: Rimozione del semipermanente</span></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="cat is-right" id="epilazione" data-cat="epilazione" aria-labelledby="t-epilazione">
+        <figure class="cat__photo pebble pebble--1" data-reveal>
+          <img src="assets/img/asciugamani-480.webp" srcset="assets/img/asciugamani-480.webp 480w, assets/img/asciugamani-960.webp 960w" sizes="(min-width: 900px) 26vw, 62vw" width="480" height="600" loading="lazy" decoding="async" alt="Asciugamani bianchi piegati sul lettino">
+        </figure>
+        <div class="cat__body">
+          <h2 class="cat__title" id="t-epilazione" data-reveal>Epilazione, delicata</h2>
+          <p class="cat__intro" data-reveal>Cera tiepida, crema lenitiva, nessuna sorpresa.</p>
+          <ul class="tlist">
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Ceretta gambe intere</h3>
+                <p class="titem__meta"><span>40 min</span><span>30 €</span></p>
+              </div>
+              <p class="titem__desc">Cera tiepida al miele, crema lenitiva alla fine.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> Peli lunghi almeno mezzo centimetro: circa due settimane dall’ultima rasatura.</p>
+              <a class="link-btn" href="prenota.html?t=ceretta-gambe">Prenota questo<span class="visually-hidden">: Ceretta gambe intere</span></a>
+            </li>
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Ceretta inguine</h3>
+                <p class="titem__meta"><span>20 min</span><span>15 €</span></p>
+              </div>
+              <p class="titem__desc">Cera per pelli delicate, a bassa temperatura.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> Anche qui: almeno mezzo centimetro di pelo.</p>
+              <a class="link-btn" href="prenota.html?t=ceretta-inguine">Prenota questo<span class="visually-hidden">: Ceretta inguine</span></a>
+            </li>
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Ceretta ascelle</h3>
+                <p class="titem__meta"><span>10 min</span><span>8 €</span></p>
+              </div>
+              <p class="titem__desc">Veloce, con cera elastica.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> Niente deodorante il giorno del trattamento.</p>
+              <a class="link-btn" href="prenota.html?t=ceretta-ascelle">Prenota questo<span class="visually-hidden">: Ceretta ascelle</span></a>
+            </li>
+            <li class="titem" data-reveal>
+              <div class="titem__head">
+                <h3 class="titem__name">Baffetto</h3>
+                <p class="titem__meta"><span>5 min</span><span>5 €</span></p>
+              </div>
+              <p class="titem__desc">Cera o filo, come preferisci.</p>
+              <p class="titem__tip"><span class="titem__tip-label">Prima di venire</span> Se usi creme esfolianti sul viso, sospendile tre giorni prima.</p>
+              <a class="link-btn" href="prenota.html?t=baffetto">Prenota questo<span class="visually-hidden">: Baffetto</span></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+<!--/@LISTA-->
+    </div>
+
+    <section class="finale" data-finale aria-labelledby="t-fine">
+      <div class="finale__photo">
+        <img src="assets/img/tramonto-800.webp" srcset="assets/img/tramonto-800.webp 800w, assets/img/tramonto-1600.webp 1600w, assets/img/tramonto-2400.webp 2400w" sizes="100vw" width="800" height="526" loading="lazy" decoding="async" alt="Mare calmo all’ora del tramonto, rosa e azzurro">
+      </div>
+      <h2 id="t-fine">Non sai quale? <em>Te lo diciamo noi.</em></h2>
+      <p>Tre domande e ti diciamo da dove partire.</p>
+      <div><a class="btn btn--light" href="index.html#consiglio">Fai le tre domande</a></div>
+    </section>
+  </main>
+
+  <a class="btn dock" href="prenota.html" data-dock>Prenota</a>
+
+  <footer class="foot">
+    <div class="foot__grid">
+      <div>
+        <p class="foot__brand">Sale Marino Spa</p>
+        <p>Via dell’Esempio 1 · orari e prezzi di esempio</p>
+      </div>
+      <ul>
+        <li><a href="trattamenti.html">Trattamenti</a></li>
+        <li><a href="prenota.html">Prenota</a></li>
+        <li><a href="prenota.html#buono">Buono regalo</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html#orari">Orari e dove</a></li>
+        <li><a href="CREDITI.md">Crediti delle foto</a></li>
+      </ul>
+    </div>
+    <div class="foot__demo">
+      <strong>Sito dimostrativo realizzato da Mockly. L’attività è inventata.</strong>
+      <span>Vuoi un sito così per il tuo lavoro? <a href="https://wa.me/393517578080?text=Ciao%20Mockly%2C%20ho%20visto%20la%20demo%20Sale%20Marino%20Spa%20e%20vorrei%20un%20sito%20cos%C3%AC%20per%20il%20mio%20lavoro." target="_blank" rel="noopener">Scrivici su WhatsApp</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/sito.js"></script>
+  <script src="assets/js/trattamenti.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sale Marino Spa — Centro estetico, viso e corpo (sito dimostrativo)</title>
+  <meta name="description" content="Centro estetico di esempio: trattamenti viso e corpo, mani e piedi, epilazione. Prezzi chiari, prenotazione su WhatsApp, buono regalo. Sito dimostrativo di Mockly.">
+  <meta name="theme-color" content="#EADFCB">
+  <link rel="icon" href="assets/img/icona.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icona-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sale Marino Spa — Un’ora solo per te">
+  <meta property="og:description" content="Sito dimostrativo di un centro estetico, realizzato da Mockly. L’attività è inventata.">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Acqua bassa sulla sabbia e la scritta Sale Marino Spa">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/img/acqua-900.webp" imagesrcset="assets/img/acqua-900.webp 900w, assets/img/acqua-1600.webp 1600w" imagesizes="100vw">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+
+  <header class="top" data-header>
+    <a class="brand" href="index.html" aria-label="Sale Marino Spa, home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.5c7.6 0 13 4.6 13 11.6 0 7.8-6.3 13.4-13.6 13.4C8 28.5 3 23.4 3 16.6 3 9 8.6 3.5 16 3.5Z" fill="#8C9C86"/><path d="M8.5 17.5c2.4-2 4.8-2 7.2 0s4.8 2 7.2 0" fill="none" stroke="#FAF7F1" stroke-width="1.8" stroke-linecap="round"/></svg>
+      Sale Marino Spa
+    </a>
+    <nav class="nav" aria-label="Principale">
+      <a href="trattamenti.html">Trattamenti</a>
+      <a href="prenota.html#buono">Buono regalo</a>
+      <a href="#orari">Orari e dove</a>
+      <a class="btn" href="prenota.html">Prenota</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-open>
+      Menu <span class="menu-btn__lines" aria-hidden="true"><span></span><span></span></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" data-menu>
+    <div class="menu__bar">
+      <span class="brand" aria-hidden="true">Sale Marino Spa</span>
+      <button class="menu__close" type="button" data-menu-close>
+        Chiudi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="menu__body">
+      <ul class="menu__links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="trattamenti.html">Trattamenti</a></li>
+        <li><a href="prenota.html">Prenota</a></li>
+        <li><a href="prenota.html#buono">Buono regalo</a></li>
+        <li><a href="#orari" data-menu-link>Orari e dove</a></li>
+      </ul>
+      <div class="menu__foot">
+        <p>Martedì–venerdì 9:30–19:30, sabato 9–13 <span>(orari di esempio)</span></p>
+        <a class="btn" href="prenota.html">Prenota un trattamento</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="contenuto">
+    <!-- 1. Prima schermata: l'acqua che si increspa al tocco -->
+    <section class="hero" aria-labelledby="titolo">
+      <div class="hero__water" data-water>
+        <img src="assets/img/acqua-900.webp" srcset="assets/img/acqua-900.webp 900w, assets/img/acqua-1600.webp 1600w" sizes="100vw" width="900" height="600" alt="" fetchpriority="high">
+      </div>
+      <div class="hero__text">
+        <p class="hero__kicker enter">Centro estetico · viso, corpo, mani</p>
+        <h1 id="titolo" class="enter">Un’ora <em>solo per&nbsp;te.</em></h1>
+        <div class="hero__actions enter">
+          <a class="btn" href="prenota.html">Prenota un trattamento</a>
+          <span class="hero__hint hero__hint--off" data-water-hint>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="10"/><circle class="ring" cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/></svg>
+            Tocca l’acqua
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Quasi vuota: si rallenta -->
+    <section class="section breath" aria-labelledby="t-respiro">
+      <div class="breath__words" data-drift="-1">
+        <div data-reveal>
+          <h2 id="t-respiro">Il lettino è già caldo.</h2>
+          <p>La tisana è pronta. Il telefono può aspettare fuori dalla porta.</p>
+        </div>
+      </div>
+      <div class="breath__stone" aria-hidden="true">
+        <span class="breath__cue"><span>inspira</span><span>espira</span></span>
+      </div>
+    </section>
+
+    <!-- 3. Trattamenti: colonne strette che cambiano posto -->
+    <section class="section section--sand rituals" aria-labelledby="t-trattamenti">
+      <div class="rituals__head" data-reveal>
+        <span class="label">I trattamenti</span>
+        <h2 id="t-trattamenti" class="title-l">Viso, corpo, mani. <span class="nowrap">E il tempo</span> che&nbsp;serve.</h2>
+      </div>
+      <ul class="rituals__list">
+        <li class="ritual" data-drift="1">
+          <a class="ritual__link" href="trattamenti.html#viso" data-reveal>
+            <figure class="ritual__photo pebble pebble--1">
+              <img src="assets/img/viso-480.webp" srcset="assets/img/viso-480.webp 480w, assets/img/viso-960.webp 960w" sizes="(min-width: 960px) 22vw, 19rem" width="480" height="600" loading="lazy" decoding="async" alt="Viso con una maschera bianca stesa con il pennello, occhi chiusi">
+            </figure>
+            <h3 class="ritual__name">Viso</h3>
+            <p class="ritual__line">Pulizia, maschere, ciglia e sopracciglia.</p>
+            <span class="ritual__price">Da 12 €</span>
+          </a>
+        </li>
+        <li class="ritual" data-drift="-1">
+          <a class="ritual__link" href="trattamenti.html#corpo" data-reveal>
+            <figure class="ritual__photo pebble pebble--2">
+              <img src="assets/img/corpo-480.webp" srcset="assets/img/corpo-480.webp 480w, assets/img/corpo-960.webp 960w" sizes="(min-width: 960px) 22vw, 19rem" width="480" height="600" loading="lazy" decoding="async" alt="Pietre di basalto calde allineate lungo la schiena">
+            </figure>
+            <h3 class="ritual__name">Corpo</h3>
+            <p class="ritual__line">Massaggi, pietre calde, scrub al sale.</p>
+            <span class="ritual__price">Da 40 €</span>
+          </a>
+        </li>
+        <li class="ritual" data-drift="1">
+          <a class="ritual__link" href="trattamenti.html#mani" data-reveal>
+            <figure class="ritual__photo pebble pebble--3">
+              <img src="assets/img/mani-480.webp" srcset="assets/img/mani-480.webp 480w, assets/img/mani-960.webp 960w" sizes="(min-width: 960px) 22vw, 19rem" width="480" height="600" loading="lazy" decoding="async" alt="Manicure in corso: un’estetista lima le unghie di una cliente">
+            </figure>
+            <h3 class="ritual__name">Mani e piedi</h3>
+            <p class="ritual__line">Semipermanente che dura, talloni morbidi.</p>
+            <span class="ritual__price">Da 10 €</span>
+          </a>
+        </li>
+        <li class="ritual" data-drift="-1">
+          <a class="ritual__link" href="trattamenti.html#epilazione" data-reveal>
+            <figure class="ritual__photo pebble pebble--4">
+              <img src="assets/img/asciugamani-480.webp" srcset="assets/img/asciugamani-480.webp 480w, assets/img/asciugamani-960.webp 960w" sizes="(min-width: 960px) 22vw, 19rem" width="480" height="600" loading="lazy" decoding="async" alt="Asciugamani bianchi piegati sul lettino">
+            </figure>
+            <h3 class="ritual__name">Epilazione</h3>
+            <p class="ritual__line">Cera tiepida, crema lenitiva alla fine.</p>
+            <span class="ritual__price">Da 5 €</span>
+          </a>
+        </li>
+        <li class="rituals__note" data-reveal>Prezzi e durate di esempio. Ogni trattamento ha la sua scheda, con quello che serve sapere prima di venire.</li>
+      </ul>
+    </section>
+
+    <!-- 4. Il mestiere: prima di venire -->
+    <section class="section before" aria-labelledby="t-prima">
+      <figure class="before__photo pebble pebble--2" data-drift="1">
+        <img src="assets/img/rotoli-480.webp" srcset="assets/img/rotoli-480.webp 480w, assets/img/rotoli-960.webp 960w" sizes="(min-width: 960px) 26rem, 78vw" width="480" height="600" loading="lazy" decoding="async" alt="Asciugamani bianchi arrotolati, pronti sul lettino" data-reveal>
+      </figure>
+      <div>
+        <div data-reveal>
+          <span class="label">Prima di venire</span>
+          <h2 id="t-prima" class="title-m">Cinque cose che ti diciamo sempre.</h2>
+        </div>
+        <ol class="before__list">
+          <li data-reveal><div><strong>Ceretta</strong> <span>Peli lunghi almeno mezzo centimetro. Circa due settimane dall’ultima rasatura.</span></div></li>
+          <li data-reveal><div><strong>Laminazione ciglia</strong> <span>Passa 48 ore prima per la prova di sensibilità. Bastano cinque minuti.</span></div></li>
+          <li data-reveal><div><strong>Scrub al sale</strong> <span>Niente rasatura il giorno prima: il sale pizzica.</span></div></li>
+          <li data-reveal><div><strong>Pulizia del viso</strong> <span>Vieni struccata. Al resto pensiamo noi.</span></div></li>
+          <li data-reveal><div><strong>Se non puoi venire</strong> <span>Avvisaci 24 ore prima: il posto va a un’altra cliente.</span></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 5. Da toccare: tre domande -->
+    <section class="section deep" id="consiglio" aria-labelledby="t-quiz">
+      <div class="quiz" data-quiz>
+        <span class="label">Non sai cosa scegliere?</span>
+        <h2 id="t-quiz" class="title-m">Tre domande. Ti diciamo noi da dove partire.</h2>
+        <div class="quiz__progress" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div data-quiz-steps>
+          <div class="quiz__step" data-step="0">
+            <h3 class="quiz__q" tabindex="-1">Cosa ti serve oggi?</h3>
+            <div class="quiz__answers">
+              <button class="answer" type="button" data-answer="spalle">Sciogliere le spalle</button>
+              <button class="answer" type="button" data-answer="pelle">Una pelle che respira</button>
+              <button class="answer" type="button" data-answer="ordine">Sentirmi in ordine</button>
+            </div>
+          </div>
+          <div class="quiz__step" data-step="1" hidden>
+            <h3 class="quiz__q" tabindex="-1">Quanto tempo hai?</h3>
+            <div class="quiz__answers">
+              <button class="answer" type="button" data-answer="breve">Meno di un’ora</button>
+              <button class="answer" type="button" data-answer="ora">Un’ora</button>
+              <button class="answer" type="button" data-answer="lungo">Me la prendo con calma</button>
+            </div>
+          </div>
+          <div class="quiz__step" data-step="2" hidden>
+            <h3 class="quiz__q" tabindex="-1">Cosa ti fa stare bene?</h3>
+            <div class="quiz__answers">
+              <button class="answer" type="button" data-answer="mani">Mani che lavorano piano</button>
+              <button class="answer" type="button" data-answer="silenzio">Occhi chiusi e silenzio</button>
+              <button class="answer" type="button" data-answer="risultato">Vedere subito il risultato</button>
+            </div>
+          </div>
+        </div>
+        <button class="quiz__back" type="button" data-quiz-back hidden>← Torna indietro</button>
+        <div class="quiz__result" data-quiz-result hidden aria-live="polite"></div>
+        <noscript><p class="quiz__noscript">Il consiglio ha bisogno di JavaScript. Puoi guardare tutti i <a href="trattamenti.html">trattamenti</a>.</p></noscript>
+      </div>
+    </section>
+
+    <!-- 6. Buono regalo -->
+    <section class="section section--sand gift" aria-labelledby="t-buono">
+      <div class="gift__text" data-reveal>
+        <span class="label">Da regalare</span>
+        <h2 id="t-buono" class="title-m">Regala un’ora di calma.</h2>
+        <p>Scegli il trattamento, scrivi due righe e guarda il buono prendere forma.</p>
+        <a class="btn btn--ghost" href="prenota.html#buono">Prepara un buono</a>
+      </div>
+      <div class="gift__card" data-drift="1">
+      <div class="voucher" aria-hidden="true" data-reveal>
+        <p class="voucher__top"><b>Sale Marino Spa</b><span>buono regalo · esempio</span></p>
+        <p class="voucher__what">Massaggio con pietre calde</p>
+        <p class="voucher__who">per Giulia, da Marco</p>
+      </div>
+      </div>
+    </section>
+
+    <!-- 7. Orari e dove -->
+    <section class="section info" id="orari" aria-labelledby="t-orari">
+      <div data-reveal>
+        <span class="label">Orari</span>
+        <h2 id="t-orari">Quando ci trovi</h2>
+        <ul class="hours" data-hours>
+          <li data-day="2"><span>Martedì</span><span>9:30–19:30</span></li>
+          <li data-day="3"><span>Mercoledì</span><span>9:30–19:30</span></li>
+          <li data-day="4"><span>Giovedì</span><span>9:30–19:30</span></li>
+          <li data-day="5"><span>Venerdì</span><span>9:30–19:30</span></li>
+          <li data-day="6"><span>Sabato</span><span>9:00–13:00</span></li>
+          <li data-day="0 1"><span>Domenica e lunedì</span><span>Chiuso</span></li>
+        </ul>
+        <p class="status" data-status hidden></p>
+        <p class="note">Orari di esempio: sul tuo sito vanno i tuoi.</p>
+      </div>
+      <div class="where" data-reveal>
+        <span class="label">Dove</span>
+        <h2>Via dell’Esempio 1</h2>
+        <p>Un indirizzo inventato, per una demo.</p>
+        <p>Qui andrebbero la mappa, il parcheggio più vicino e il citofono da suonare.</p>
+        <a class="btn" href="prenota.html">Prenota un trattamento</a>
+      </div>
+    </section>
+
+    <!-- 8. Finale -->
+    <section class="finale" data-finale aria-labelledby="t-fine">
+      <div class="finale__photo">
+        <img src="assets/img/tramonto-800.webp" srcset="assets/img/tramonto-800.webp 800w, assets/img/tramonto-1600.webp 1600w, assets/img/tramonto-2400.webp 2400w" sizes="100vw" width="800" height="526" loading="lazy" decoding="async" alt="Mare calmo all’ora del tramonto, rosa e azzurro">
+      </div>
+      <h2 id="t-fine">Ti aspettiamo. <em>Con calma.</em></h2>
+      <p>Scegli il giorno, al resto pensiamo noi.</p>
+      <div><a class="btn btn--light" href="prenota.html">Prenota il tuo momento</a></div>
+    </section>
+  </main>
+
+  <a class="btn dock" href="prenota.html" data-dock>Prenota</a>
+
+  <footer class="foot">
+    <div class="foot__grid">
+      <div>
+        <p class="foot__brand">Sale Marino Spa</p>
+        <p>Via dell’Esempio 1 · orari e prezzi di esempio</p>
+      </div>
+      <ul>
+        <li><a href="trattamenti.html">Trattamenti</a></li>
+        <li><a href="prenota.html">Prenota</a></li>
+        <li><a href="prenota.html#buono">Buono regalo</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html#orari">Orari e dove</a></li>
+        <li><a href="CREDITI.md">Crediti delle foto</a></li>
+      </ul>
+    </div>
+    <div class="foot__demo">
+      <strong>Sito dimostrativo realizzato da Mockly. L’attività è inventata.</strong>
+      <span>Vuoi un sito così per il tuo lavoro? <a href="https://wa.me/393517578080?text=Ciao%20Mockly%2C%20ho%20visto%20la%20demo%20Sale%20Marino%20Spa%20e%20vorrei%20un%20sito%20cos%C3%AC%20per%20il%20mio%20lavoro." target="_blank" rel="noopener">Scrivici su WhatsApp</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/dati.js"></script>
+  <script src="assets/js/sito.js"></script>
+  <script src="assets/js/acqua.js"></script>
+  <script src="assets/js/consiglio.js"></script>
+</body>
+</html>
