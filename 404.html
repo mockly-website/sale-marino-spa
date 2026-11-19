@@ -68,14 +68,19 @@
 
   <main id="contenuto">
     <section class="lost">
-      <figure class="pebble pebble--2" style="width:min(42vw,12rem);aspect-ratio:4/5" aria-hidden="true">
-        <img src="assets/img/acqua-900.webp" width="900" height="600" alt="">
-      </figure>
-      <h1>Questa pagina è andata <em>al largo.</em></h1>
-      <p>Forse il collegamento è vecchio, o c’è un errore di battitura. Ricominciamo da riva.</p>
-      <div class="lost__actions">
-        <a class="btn" href="index.html">Torna alla home</a>
-        <a class="link-btn" href="trattamenti.html">Guarda i trattamenti</a>
+      <div class="lost__water" aria-hidden="true">
+        <img src="assets/img/acqua-900.webp" srcset="assets/img/acqua-900.webp 900w, assets/img/acqua-1600.webp 1600w" sizes="100vw" width="900" height="600" alt="">
+      </div>
+      <div class="lost__text">
+        <p class="label enter">Pagina non trovata</p>
+        <h1 class="enter">Questa pagina è andata <em>al largo.</em></h1>
+        <div class="enter">
+          <p>Forse il collegamento è vecchio, o c’è un errore di battitura. Ricominciamo da riva.</p>
+          <div class="lost__actions">
+            <a class="btn" href="index.html">Torna alla home</a>
+            <a class="link-btn" href="trattamenti.html">Guarda i trattamenti</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>

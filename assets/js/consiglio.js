@@ -61,7 +61,7 @@
         '<p class="result__why">' + best.desc + "</p>" +
         '<p class="result__tip">Prima di venire: ' + best.prima + "</p>" +
         '<div class="result__actions">' +
-          '<a class="btn btn--light" href="prenota.html?t=' + best.id + '">Prenota questo</a>' +
+          '<a class="btn" href="prenota.html?t=' + best.id + '">Prenota questo</a>' +
           '<button class="result__again" type="button">Rifai le domande</button>' +
         "</div>" +
         (also ? '<p class="result__also">Ti potrebbe piacere anche: <a href="trattamenti.html#' + also.cat + '">' + also.nome + "</a></p>" : "") +

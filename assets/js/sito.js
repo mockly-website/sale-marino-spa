@@ -95,6 +95,24 @@
     update();
   }
 
+  /* Al tocco, un cerchio d'acqua si allarga dal dito (come nella prima schermata) */
+  if (!calm) {
+    document.addEventListener("pointerdown", function (e) {
+      var el = e.target.closest(".answer, .chip, .day, .tab");
+      if (!el || el.disabled) return;
+      var r = el.getBoundingClientRect();
+      var size = Math.max(r.width, r.height) * 2.2;
+      var ring = document.createElement("span");
+      ring.className = "ripple-ring";
+      ring.setAttribute("aria-hidden", "true");
+      ring.style.width = ring.style.height = size + "px";
+      ring.style.left = (e.clientX - r.left) + "px";
+      ring.style.top = (e.clientY - r.top) + "px";
+      el.appendChild(ring);
+      ring.addEventListener("animationend", function () { ring.remove(); });
+    });
+  }
+
   /* Finale: la foto si assesta quando arrivi */
   var finale = document.querySelector("[data-finale]");
   if (finale && "IntersectionObserver" in window) {

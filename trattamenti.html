@@ -18,6 +18,7 @@
   <meta property="og:image:alt" content="Acqua bassa sulla sabbia e la scritta Sale Marino Spa">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/img/sale-960.webp" imagesrcset="assets/img/sale-480.webp 480w, assets/img/sale-960.webp 960w" imagesizes="(min-width: 960px) 62vw, 100vw">
   <link rel="stylesheet" href="assets/css/style.css">
   <script>document.documentElement.classList.add("js")</script>
 </head>
@@ -68,14 +69,14 @@
 
   <main id="contenuto">
     <header class="page-head">
-      <div>
+      <figure class="page-head__photo">
+        <img src="assets/img/sale-960.webp" srcset="assets/img/sale-480.webp 480w, assets/img/sale-960.webp 960w" sizes="(min-width: 960px) 62vw, 100vw" width="480" height="600" alt="Cucchiai pieni di sale grosso" fetchpriority="high">
+      </figure>
+      <div class="page-head__text">
         <p class="label enter">Trattamenti e prezzi</p>
         <h1 class="enter">Con calma, <em>uno alla&nbsp;volta.</em></h1>
         <p class="lead enter">Quindici trattamenti, ognuno con quello che serve sapere prima di venire.</p>
       </div>
-      <figure class="page-head__stone pebble pebble--3 enter">
-        <img src="assets/img/sale-480.webp" srcset="assets/img/sale-480.webp 480w, assets/img/sale-960.webp 960w" sizes="(min-width: 960px) 20rem, 40vw" width="480" height="600" alt="Cucchiai pieni di sale grosso">
-      </figure>
     </header>
 
     <nav class="filter" aria-label="Filtra i trattamenti">
@@ -93,11 +94,12 @@
     <div class="menu-list">
       <!--@LISTA-->
       <section class="cat is-left" id="viso" data-cat="viso" aria-labelledby="t-viso">
-        <figure class="cat__photo pebble pebble--1" data-reveal>
-          <img src="assets/img/viso-480.webp" srcset="assets/img/viso-480.webp 480w, assets/img/viso-960.webp 960w" sizes="(min-width: 900px) 26vw, 62vw" width="480" height="600" loading="lazy" decoding="async" alt="Viso con una maschera bianca stesa con il pennello, occhi chiusi">
+        <figure class="cat__photo photo" data-reveal>
+          <img src="assets/img/viso-480.webp" srcset="assets/img/viso-480.webp 480w, assets/img/viso-960.webp 960w" sizes="(min-width: 960px) 34vw, 100vw" width="480" height="600" loading="lazy" decoding="async" alt="Viso con una maschera bianca stesa con il pennello, occhi chiusi">
         </figure>
         <div class="cat__body">
-          <h2 class="cat__title" id="t-viso" data-reveal>Il viso, senza fretta</h2>
+          <span class="cat__num" aria-hidden="true" data-reveal>01</span>
+          <h2 class="cat__title" id="t-viso" data-reveal>Il viso, <em>senza fretta</em></h2>
           <p class="cat__intro" data-reveal>Pelle pulita, ciglia e sopracciglia in ordine. Si viene struccate.</p>
           <ul class="tlist">
             <li class="titem" data-reveal>
@@ -140,11 +142,12 @@
         </div>
       </section>
       <section class="cat is-right" id="corpo" data-cat="corpo" aria-labelledby="t-corpo">
-        <figure class="cat__photo pebble pebble--2" data-reveal>
-          <img src="assets/img/corpo-480.webp" srcset="assets/img/corpo-480.webp 480w, assets/img/corpo-960.webp 960w" sizes="(min-width: 900px) 26vw, 62vw" width="480" height="600" loading="lazy" decoding="async" alt="Pietre di basalto calde allineate lungo la schiena">
+        <figure class="cat__photo photo" data-reveal>
+          <img src="assets/img/corpo-480.webp" srcset="assets/img/corpo-480.webp 480w, assets/img/corpo-960.webp 960w" sizes="(min-width: 960px) 34vw, 100vw" width="480" height="600" loading="lazy" decoding="async" alt="Pietre di basalto calde allineate lungo la schiena">
         </figure>
         <div class="cat__body">
-          <h2 class="cat__title" id="t-corpo" data-reveal>Il corpo, che si scioglie</h2>
+          <span class="cat__num" aria-hidden="true" data-reveal>02</span>
+          <h2 class="cat__title" id="t-corpo" data-reveal>Il corpo, <em>che si scioglie</em></h2>
           <p class="cat__intro" data-reveal>Olio caldo, pietre, mani lente. Il telefono resta fuori.</p>
           <ul class="tlist">
             <li class="titem" data-reveal>
@@ -187,11 +190,12 @@
         </div>
       </section>
       <section class="cat is-left" id="mani" data-cat="mani" aria-labelledby="t-mani">
-        <figure class="cat__photo pebble pebble--3" data-reveal>
-          <img src="assets/img/mani-480.webp" srcset="assets/img/mani-480.webp 480w, assets/img/mani-960.webp 960w" sizes="(min-width: 900px) 26vw, 62vw" width="480" height="600" loading="lazy" decoding="async" alt="Manicure in corso: un’estetista lima le unghie di una cliente">
+        <figure class="cat__photo photo" data-reveal>
+          <img src="assets/img/mani-480.webp" srcset="assets/img/mani-480.webp 480w, assets/img/mani-960.webp 960w" sizes="(min-width: 960px) 34vw, 100vw" width="480" height="600" loading="lazy" decoding="async" alt="Manicure in corso: un’estetista lima le unghie di una cliente">
         </figure>
         <div class="cat__body">
-          <h2 class="cat__title" id="t-mani" data-reveal>Mani e piedi, curati</h2>
+          <span class="cat__num" aria-hidden="true" data-reveal>03</span>
+          <h2 class="cat__title" id="t-mani" data-reveal>Mani e piedi, <em>curati</em></h2>
           <p class="cat__intro" data-reveal>Colore che dura, talloni morbidi, unghie che non si sfogliano.</p>
           <ul class="tlist">
             <li class="titem" data-reveal>
@@ -225,11 +229,12 @@
         </div>
       </section>
       <section class="cat is-right" id="epilazione" data-cat="epilazione" aria-labelledby="t-epilazione">
-        <figure class="cat__photo pebble pebble--1" data-reveal>
-          <img src="assets/img/asciugamani-480.webp" srcset="assets/img/asciugamani-480.webp 480w, assets/img/asciugamani-960.webp 960w" sizes="(min-width: 900px) 26vw, 62vw" width="480" height="600" loading="lazy" decoding="async" alt="Asciugamani bianchi piegati sul lettino">
+        <figure class="cat__photo photo" data-reveal>
+          <img src="assets/img/asciugamani-480.webp" srcset="assets/img/asciugamani-480.webp 480w, assets/img/asciugamani-960.webp 960w" sizes="(min-width: 960px) 34vw, 100vw" width="480" height="600" loading="lazy" decoding="async" alt="Asciugamani bianchi piegati sul lettino">
         </figure>
         <div class="cat__body">
-          <h2 class="cat__title" id="t-epilazione" data-reveal>Epilazione, delicata</h2>
+          <span class="cat__num" aria-hidden="true" data-reveal>04</span>
+          <h2 class="cat__title" id="t-epilazione" data-reveal>Epilazione, <em>delicata</em></h2>
           <p class="cat__intro" data-reveal>Cera tiepida, crema lenitiva, nessuna sorpresa.</p>
           <ul class="tlist">
             <li class="titem" data-reveal>
@@ -278,9 +283,10 @@
       <div class="finale__photo">
         <img src="assets/img/tramonto-800.webp" srcset="assets/img/tramonto-800.webp 800w, assets/img/tramonto-1600.webp 1600w, assets/img/tramonto-2400.webp 2400w" sizes="100vw" width="800" height="526" loading="lazy" decoding="async" alt="Mare calmo all’ora del tramonto, rosa e azzurro">
       </div>
-      <h2 id="t-fine">Non sai quale? <em>Te lo diciamo noi.</em></h2>
-      <p>Tre domande e ti diciamo da dove partire.</p>
-      <div><a class="btn btn--light" href="index.html#consiglio">Fai le tre domande</a></div>
+      <p class="label" data-reveal>Non sai quale?</p>
+      <h2 id="t-fine" data-reveal>Te lo diciamo <em>noi.</em></h2>
+      <p data-reveal>Tre domande e ti diciamo da dove partire.</p>
+      <div data-reveal><a class="btn" href="index.html#consiglio">Fai le tre domande</a></div>
     </section>
   </main>
 

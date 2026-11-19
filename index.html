@@ -86,79 +86,90 @@
       </div>
     </section>
 
-    <!-- 2. Quasi vuota: si rallenta -->
+    <!-- 2. Quasi vuota: si rallenta, l'acqua continua a muoversi -->
     <section class="section breath" aria-labelledby="t-respiro">
-      <div class="breath__words" data-drift="-1">
-        <div data-reveal>
-          <h2 id="t-respiro">Il lettino è già caldo.</h2>
-          <p>La tisana è pronta. Il telefono può aspettare fuori dalla porta.</p>
-        </div>
-      </div>
-      <div class="breath__stone" aria-hidden="true">
+      <div class="breath__rings" aria-hidden="true">
+        <span class="breath__ring"></span><span class="breath__ring"></span><span class="breath__ring"></span>
         <span class="breath__cue"><span>inspira</span><span>espira</span></span>
+      </div>
+      <div class="breath__words" data-reveal>
+        <h2 id="t-respiro">Il lettino è <em>già caldo.</em></h2>
+        <p>La tisana è pronta. Il telefono può aspettare fuori dalla porta.</p>
       </div>
     </section>
 
-    <!-- 3. Trattamenti: colonne strette che cambiano posto -->
-    <section class="section section--sand rituals" aria-labelledby="t-trattamenti">
+    <!-- 3. Trattamenti: foto senza bordi, il nome sale sulla sfumatura -->
+    <section class="section rituals" aria-labelledby="t-trattamenti">
       <div class="rituals__head" data-reveal>
-        <span class="label">I trattamenti</span>
-        <h2 id="t-trattamenti" class="title-l">Viso, corpo, mani. <span class="nowrap">E il tempo</span> che&nbsp;serve.</h2>
+        <p class="label">I trattamenti</p>
+        <h2 id="t-trattamenti" class="title-l">Viso, corpo, mani. <em>E il tempo che&nbsp;serve.</em></h2>
       </div>
       <ul class="rituals__list">
-        <li class="ritual" data-drift="1">
+        <li class="ritual">
           <a class="ritual__link" href="trattamenti.html#viso" data-reveal>
-            <figure class="ritual__photo pebble pebble--1">
-              <img src="assets/img/viso-480.webp" srcset="assets/img/viso-480.webp 480w, assets/img/viso-960.webp 960w" sizes="(min-width: 960px) 22vw, 19rem" width="480" height="600" loading="lazy" decoding="async" alt="Viso con una maschera bianca stesa con il pennello, occhi chiusi">
+            <figure class="ritual__photo photo photo--down">
+              <img src="assets/img/viso-480.webp" srcset="assets/img/viso-480.webp 480w, assets/img/viso-960.webp 960w" sizes="(min-width: 960px) 22vw, 22rem" width="480" height="600" loading="lazy" decoding="async" alt="Viso con una maschera bianca stesa con il pennello, occhi chiusi">
             </figure>
-            <h3 class="ritual__name">Viso</h3>
-            <p class="ritual__line">Pulizia, maschere, ciglia e sopracciglia.</p>
-            <span class="ritual__price">Da 12 €</span>
+            <div class="ritual__text">
+              <span class="ritual__num" aria-hidden="true">01</span>
+              <h3 class="ritual__name">Viso</h3>
+              <p class="ritual__line">Pulizia, maschere, ciglia e sopracciglia.</p>
+              <span class="ritual__price">Da 12 €</span>
+            </div>
           </a>
         </li>
-        <li class="ritual" data-drift="-1">
+        <li class="ritual">
           <a class="ritual__link" href="trattamenti.html#corpo" data-reveal>
-            <figure class="ritual__photo pebble pebble--2">
-              <img src="assets/img/corpo-480.webp" srcset="assets/img/corpo-480.webp 480w, assets/img/corpo-960.webp 960w" sizes="(min-width: 960px) 22vw, 19rem" width="480" height="600" loading="lazy" decoding="async" alt="Pietre di basalto calde allineate lungo la schiena">
+            <figure class="ritual__photo photo photo--down">
+              <img src="assets/img/corpo-480.webp" srcset="assets/img/corpo-480.webp 480w, assets/img/corpo-960.webp 960w" sizes="(min-width: 960px) 22vw, 22rem" width="480" height="600" loading="lazy" decoding="async" alt="Pietre di basalto calde allineate lungo la schiena">
             </figure>
-            <h3 class="ritual__name">Corpo</h3>
-            <p class="ritual__line">Massaggi, pietre calde, scrub al sale.</p>
-            <span class="ritual__price">Da 40 €</span>
+            <div class="ritual__text">
+              <span class="ritual__num" aria-hidden="true">02</span>
+              <h3 class="ritual__name">Corpo</h3>
+              <p class="ritual__line">Massaggi, pietre calde, scrub al sale.</p>
+              <span class="ritual__price">Da 40 €</span>
+            </div>
           </a>
         </li>
-        <li class="ritual" data-drift="1">
+        <li class="ritual">
           <a class="ritual__link" href="trattamenti.html#mani" data-reveal>
-            <figure class="ritual__photo pebble pebble--3">
-              <img src="assets/img/mani-480.webp" srcset="assets/img/mani-480.webp 480w, assets/img/mani-960.webp 960w" sizes="(min-width: 960px) 22vw, 19rem" width="480" height="600" loading="lazy" decoding="async" alt="Manicure in corso: un’estetista lima le unghie di una cliente">
+            <figure class="ritual__photo photo photo--down">
+              <img src="assets/img/mani-480.webp" srcset="assets/img/mani-480.webp 480w, assets/img/mani-960.webp 960w" sizes="(min-width: 960px) 22vw, 22rem" width="480" height="600" loading="lazy" decoding="async" alt="Manicure in corso: un’estetista lima le unghie di una cliente">
             </figure>
-            <h3 class="ritual__name">Mani e piedi</h3>
-            <p class="ritual__line">Semipermanente che dura, talloni morbidi.</p>
-            <span class="ritual__price">Da 10 €</span>
+            <div class="ritual__text">
+              <span class="ritual__num" aria-hidden="true">03</span>
+              <h3 class="ritual__name">Mani e piedi</h3>
+              <p class="ritual__line">Semipermanente che dura, talloni morbidi.</p>
+              <span class="ritual__price">Da 10 €</span>
+            </div>
           </a>
         </li>
-        <li class="ritual" data-drift="-1">
+        <li class="ritual">
           <a class="ritual__link" href="trattamenti.html#epilazione" data-reveal>
-            <figure class="ritual__photo pebble pebble--4">
-              <img src="assets/img/asciugamani-480.webp" srcset="assets/img/asciugamani-480.webp 480w, assets/img/asciugamani-960.webp 960w" sizes="(min-width: 960px) 22vw, 19rem" width="480" height="600" loading="lazy" decoding="async" alt="Asciugamani bianchi piegati sul lettino">
+            <figure class="ritual__photo photo photo--down">
+              <img src="assets/img/asciugamani-480.webp" srcset="assets/img/asciugamani-480.webp 480w, assets/img/asciugamani-960.webp 960w" sizes="(min-width: 960px) 22vw, 22rem" width="480" height="600" loading="lazy" decoding="async" alt="Asciugamani bianchi piegati sul lettino">
             </figure>
-            <h3 class="ritual__name">Epilazione</h3>
-            <p class="ritual__line">Cera tiepida, crema lenitiva alla fine.</p>
-            <span class="ritual__price">Da 5 €</span>
+            <div class="ritual__text">
+              <span class="ritual__num" aria-hidden="true">04</span>
+              <h3 class="ritual__name">Epilazione</h3>
+              <p class="ritual__line">Cera tiepida, crema lenitiva alla fine.</p>
+              <span class="ritual__price">Da 5 €</span>
+            </div>
           </a>
         </li>
         <li class="rituals__note" data-reveal>Prezzi e durate di esempio. Ogni trattamento ha la sua scheda, con quello che serve sapere prima di venire.</li>
       </ul>
     </section>
 
-    <!-- 4. Il mestiere: prima di venire -->
+    <!-- 4. Prima di venire: la foto si scioglie come l'acqua in alto -->
     <section class="section before" aria-labelledby="t-prima">
-      <figure class="before__photo pebble pebble--2" data-drift="1">
-        <img src="assets/img/rotoli-480.webp" srcset="assets/img/rotoli-480.webp 480w, assets/img/rotoli-960.webp 960w" sizes="(min-width: 960px) 26rem, 78vw" width="480" height="600" loading="lazy" decoding="async" alt="Asciugamani bianchi arrotolati, pronti sul lettino" data-reveal>
+      <figure class="before__photo photo" data-reveal>
+        <img src="assets/img/rotoli-960.webp" srcset="assets/img/rotoli-480.webp 480w, assets/img/rotoli-960.webp 960w" sizes="(min-width: 960px) 58vw, 100vw" width="480" height="600" loading="lazy" decoding="async" alt="Asciugamani bianchi arrotolati, pronti sul lettino">
       </figure>
-      <div>
+      <div class="before__text">
         <div data-reveal>
-          <span class="label">Prima di venire</span>
-          <h2 id="t-prima" class="title-m">Cinque cose che ti diciamo sempre.</h2>
+          <p class="label">Prima di venire</p>
+          <h2 id="t-prima" class="title-m">Cinque cose <em>che ti diciamo sempre.</em></h2>
         </div>
         <ol class="before__list">
           <li data-reveal><div><strong>Ceretta</strong> <span>Peli lunghi almeno mezzo centimetro. Circa due settimane dall’ultima rasatura.</span></div></li>
@@ -170,11 +181,14 @@
       </div>
     </section>
 
-    <!-- 5. Da toccare: tre domande -->
-    <section class="section deep" id="consiglio" aria-labelledby="t-quiz">
+    <!-- 5. Da toccare: tre domande, sull'acqua -->
+    <section class="section quiz-sec" id="consiglio" aria-labelledby="t-quiz">
+      <div class="quiz-sec__water" aria-hidden="true">
+        <img src="assets/img/acqua-900.webp" srcset="assets/img/acqua-900.webp 900w, assets/img/acqua-1600.webp 1600w" sizes="100vw" width="900" height="600" loading="lazy" decoding="async" alt="">
+      </div>
       <div class="quiz" data-quiz>
-        <span class="label">Non sai cosa scegliere?</span>
-        <h2 id="t-quiz" class="title-m">Tre domande. Ti diciamo noi da dove partire.</h2>
+        <p class="label">Non sai cosa scegliere?</p>
+        <h2 id="t-quiz" class="title-m">Tre domande. <em>Ti diciamo noi da dove partire.</em></h2>
         <div class="quiz__progress" aria-hidden="true"><span></span><span></span><span></span></div>
         <div data-quiz-steps>
           <div class="quiz__step" data-step="0">
@@ -208,28 +222,28 @@
       </div>
     </section>
 
-    <!-- 6. Buono regalo -->
-    <section class="section section--sand gift" aria-labelledby="t-buono">
+    <!-- 6. Buono regalo: una piccola prima schermata da regalare -->
+    <section class="section gift" aria-labelledby="t-buono">
       <div class="gift__text" data-reveal>
-        <span class="label">Da regalare</span>
-        <h2 id="t-buono" class="title-m">Regala un’ora di calma.</h2>
+        <p class="label">Da regalare</p>
+        <h2 id="t-buono" class="title-m">Regala <em>un’ora di calma.</em></h2>
         <p>Scegli il trattamento, scrivi due righe e guarda il buono prendere forma.</p>
         <a class="btn btn--ghost" href="prenota.html#buono">Prepara un buono</a>
       </div>
       <div class="gift__card" data-drift="1">
-      <div class="voucher" aria-hidden="true" data-reveal>
-        <p class="voucher__top"><b>Sale Marino Spa</b><span>buono regalo · esempio</span></p>
-        <p class="voucher__what">Massaggio con pietre calde</p>
-        <p class="voucher__who">per Giulia, da Marco</p>
-      </div>
+        <div class="voucher" aria-hidden="true" data-reveal>
+          <p class="voucher__top"><b>Sale Marino Spa</b><span>buono regalo · esempio</span></p>
+          <p class="voucher__what">Massaggio con pietre calde</p>
+          <p class="voucher__who">per Giulia, da Marco</p>
+        </div>
       </div>
     </section>
 
     <!-- 7. Orari e dove -->
     <section class="section info" id="orari" aria-labelledby="t-orari">
       <div data-reveal>
-        <span class="label">Orari</span>
-        <h2 id="t-orari">Quando ci trovi</h2>
+        <p class="label">Orari</p>
+        <h2 id="t-orari">Quando <em>ci trovi</em></h2>
         <ul class="hours" data-hours>
           <li data-day="2"><span>Martedì</span><span>9:30–19:30</span></li>
           <li data-day="3"><span>Mercoledì</span><span>9:30–19:30</span></li>
@@ -242,22 +256,23 @@
         <p class="note">Orari di esempio: sul tuo sito vanno i tuoi.</p>
       </div>
       <div class="where" data-reveal>
-        <span class="label">Dove</span>
-        <h2>Via dell’Esempio 1</h2>
+        <p class="label">Dove</p>
+        <h2>Via dell’Esempio <em>1</em></h2>
         <p>Un indirizzo inventato, per una demo.</p>
         <p>Qui andrebbero la mappa, il parcheggio più vicino e il citofono da suonare.</p>
         <a class="btn" href="prenota.html">Prenota un trattamento</a>
       </div>
     </section>
 
-    <!-- 8. Finale -->
+    <!-- 8. Finale: la prima schermata, al tramonto -->
     <section class="finale" data-finale aria-labelledby="t-fine">
       <div class="finale__photo">
         <img src="assets/img/tramonto-800.webp" srcset="assets/img/tramonto-800.webp 800w, assets/img/tramonto-1600.webp 1600w, assets/img/tramonto-2400.webp 2400w" sizes="100vw" width="800" height="526" loading="lazy" decoding="async" alt="Mare calmo all’ora del tramonto, rosa e azzurro">
       </div>
-      <h2 id="t-fine">Ti aspettiamo. <em>Con calma.</em></h2>
-      <p>Scegli il giorno, al resto pensiamo noi.</p>
-      <div><a class="btn btn--light" href="prenota.html">Prenota il tuo momento</a></div>
+      <p class="label" data-reveal>Sale Marino Spa</p>
+      <h2 id="t-fine" data-reveal>Ti aspettiamo. <em>Con calma.</em></h2>
+      <p data-reveal>Scegli il giorno, al resto pensiamo noi.</p>
+      <div data-reveal><a class="btn" href="prenota.html">Prenota il tuo momento</a></div>
     </section>
   </main>
 
